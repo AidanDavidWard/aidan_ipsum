@@ -9,26 +9,49 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'aidan_ipsum'
+gem "aidan_ipsum", :git => "git://github.com/tomdracz/aidan_ipsum.git"
 ```
 
 And then execute:
-
-    $ bundle
+```bash
+  $ bundle
+```
 
 Or install it yourself as:
-
-    $ gem install aidan_ipsum
+  ```bash
+  $ gem install aidan_ipsum
+  ```
 
 ## Usage
 
-TODO: Write usage instructions here
+  You can run the gem from included console file
+  ```bash
+  bin/console
+  ```
+  Sentence
+  ```bash
+  AidanIpsum.sentence
+  ```
+  Paragraph
+  ```bash
+  AidanIpsum.paragraph(optional_number_of_sentences)
+  ```
+  Quote
+  ```bash
+  AidanIpsum.quote
+  ```
+  Gibberish
+  ```bash
+  AidanIpsum.gibberish(optional_level_of_nonsense)
+  ```
+  BONUS Bingo card
+  ```bash
+  AidanIpsum.bingo
+  ```
 
-## Development
+## TODO
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+Tests, because I'm lazy
 
 ## Contributing
 
